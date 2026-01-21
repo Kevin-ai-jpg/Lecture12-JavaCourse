@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="479.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.CourierWindowController">
+   <children>
+      <Label layoutX="20.0" layoutY="14.0" text="Undelivered packages" />
+      <ListView fx:id="packagesListView" layoutX="20.0" layoutY="31.0" prefHeight="200.0" prefWidth="267.0" />
+      <Label layoutX="248.0" layoutY="14.0" text="Zone for the courier" />
+      <TextField fx:id="zoneField" layoutX="361.0" layoutY="10.0" />
+      <ListView fx:id="optimisedPackagesListView" layoutX="425.0" layoutY="40.0" prefHeight="200.0" prefWidth="234.0" />
+      <Button fx:id="optimiseButton" layoutX="294.0" layoutY="106.0" mnemonicParsing="false" onAction="#onOptimiseButtonClick" prefHeight="94.0" prefWidth="125.0" text="Optimise Route" />
+      <Button fx:id="deliverButton" layoutX="26.0" layoutY="240.0" mnemonicParsing="false" onAction="#onDeliverButtonClick" text="Deliver Package" />
+      <ComboBox fx:id="streetsComboBox" layoutX="26.0" layoutY="273.0" onAction="#showStreets" prefWidth="150.0" />
+      <ListView fx:id="streetPackagesListView" layoutX="26.0" layoutY="307.0" onMouseClicked="#onStreetSelected" prefHeight="143.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

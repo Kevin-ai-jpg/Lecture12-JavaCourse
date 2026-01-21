@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.CompanyController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Packages:" />
+      <ListView fx:id="companyPackagesListView" layoutX="14.0" layoutY="31.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="addPackageButton" layoutX="23.0" layoutY="346.0" mnemonicParsing="false" onAction="#addPackage" text="Add Package" />
+      <Label layoutX="14.0" layoutY="240.0" text="Recipient:" />
+      <TextField fx:id="recipientName" layoutX="66.0" layoutY="236.0" />
+      <TextField fx:id="address" layoutX="66.0" layoutY="272.0" />
+      <Label layoutX="14.0" layoutY="276.0" text="Address:" />
+      <Label layoutX="14.0" layoutY="308.0" text="LocationX:" />
+      <Label layoutX="14.0" layoutY="325.0" text="LocationY:" />
+      <TextField fx:id="locX" layoutX="78.0" layoutY="304.0" />
+      <TextField fx:id="locY" layoutX="78.0" layoutY="330.0" prefHeight="0.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>
