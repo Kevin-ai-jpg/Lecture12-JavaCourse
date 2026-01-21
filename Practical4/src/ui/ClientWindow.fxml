@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ClientWindowController">
+   <children>
+      <Label layoutX="23.0" layoutY="14.0" text="Cars:" />
+      <ListView fx:id="carListView" layoutX="23.0" layoutY="31.0" prefHeight="200.0" prefWidth="326.0" />
+      <ComboBox fx:id="categories" layoutX="399.0" layoutY="31.0" onAction="#showCategories" onKeyPressed="#showCategories" onKeyReleased="#showCategories" onMouseClicked="#showCategories" prefWidth="150.0" />
+      <ListView fx:id="carListViewCategory" layoutX="386.0" layoutY="62.0" onMouseClicked="#onCategorySelected" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="startDate" layoutX="141.0" layoutY="250.0" />
+      <Label layoutX="22.0" layoutY="254.0" text="StartDate:" />
+      <Button fx:id="rentButton" layoutX="308.0" layoutY="250.0" mnemonicParsing="false" onAction="#addRent" text="Rent" />
+      <Label layoutX="22.0" layoutY="303.0" text="EndDate:" />
+      <TextField fx:id="endDate" layoutX="141.0" layoutY="299.0" />
+   </children>
+</AnchorPane>
